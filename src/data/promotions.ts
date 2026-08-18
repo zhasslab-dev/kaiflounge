@@ -1,0 +1,73 @@
+import { PromoBanner, PosterEvent } from '../types';
+
+export const PROMOTIONS: PromoBanner[] = [
+  {
+    id: 'pr1',
+    title: 'Hookah & Tea Combo',
+    subtitle: 'Специальный сет по будням с 12:00 до 18:00',
+    badge: 'БУДНИ 12:00-18:00',
+    discountOrOffer: '14 500 ₸ вместо 17 000 ₸',
+    imageUrl: 'https://images.unsplash.com/photo-1527661591475-527312dd65f5?auto=format&fit=crop&w=800&q=80',
+    validUntil: 'Понедельник — Пятница',
+    description: 'Закажите любой классический кальян и получите большой чайник авторского чая "Маракуйя-Жасмин" в подарок!',
+    code: 'KAIF_TEA_COMBO',
+  },
+  {
+    id: 'pr2',
+    title: 'Happy Hours Cocktail 1+1',
+    subtitle: 'Второй коктейль в подарок',
+    badge: '1+1 КОКТЕЙЛИ',
+    discountOrOffer: 'Каждый четверг с 20:00',
+    imageUrl: 'https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80',
+    validUntil: 'Каждый четверг',
+    description: 'При заказе любого авторского коктейля из барного меню — второй аналогичный коктейль за счет заведения.',
+    code: 'HAPPY_KAIF',
+  },
+  {
+    id: 'pr3',
+    title: 'Скидка 20% на День Рождения',
+    subtitle: 'Празднуйте KAIF моментами с друзьями',
+    badge: 'BIRTHDAY VIP',
+    discountOrOffer: '-20% на весь чек',
+    imageUrl: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80',
+    validUntil: 'Действует 7 дней',
+    description: 'Скидка 20% на всю кухню и бар при наличии документа. Подарок от шефа и лучшая бронь стола!',
+    code: 'BDAY20',
+  },
+];
+
+export const POSTER_EVENTS: PosterEvent[] = [
+  {
+    id: 'ev1',
+    title: 'Deep House & Organic Night',
+    artistOrDJ: 'DJ ALAN FOSTER (Almaty / Astana)',
+    date: 'Пятница, 8 Августа',
+    time: '22:00 — 03:00',
+    genre: 'Organic House / Deep / Afro Beat',
+    imageUrl: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=800&q=80',
+    description: 'Атмосферный вечер с живым сетом от Alan Foster, дымным кальяном и авторскими коктейлями от шеф-бармена.',
+    entryFee: 'Вход свободный (FC/DC, Бронь столов)',
+  },
+  {
+    id: 'ev2',
+    title: 'KAIF Lounge Sessions: Live Saxophone & DJ',
+    artistOrDJ: 'DANIA SAX & DJ ASTANA BEATS',
+    date: 'Суббота, 9 Августа',
+    time: '21:30 — 02:00',
+    genre: 'Live Saxophone & Lounge',
+    imageUrl: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80',
+    description: 'Чарующий живой звук саксофона под мягкие ритмы хауса. Рекомендуем бронировать столы заранее.',
+    entryFee: 'Депозит за стол',
+  },
+  {
+    id: 'ev3',
+    title: 'Cocktail & Sommelier Masterclass',
+    artistOrDJ: 'Шеф-Сомелье KAIF & Mixologist',
+    date: 'Воскресенье, 10 Августа',
+    time: '19:00 — 21:00',
+    genre: 'Gourmet Degustation',
+    imageUrl: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80',
+    description: 'Дегустация 5 авторских вин и коктейлей с фуд-пейрингом от шеф-повара заведения.',
+    entryFee: '15 000 ₸ за персону',
+  },
+];

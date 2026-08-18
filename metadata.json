@@ -1,0 +1,6 @@
+{
+  "name": "KAIF Lounge Bar Menu",
+  "description": "Интерактивное мобильное электронное меню для премиального лаундж-бара KAIF в Астане",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
