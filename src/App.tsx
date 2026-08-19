@@ -1,6 +1,5 @@
 import React from 'react';
-// 1. Исправили импорт на правильное имя массива и путь
-import { MENU_ITEMS } from './data/menuData';
+import { menuData } from './data';
 
 const App = () => {
   return (
@@ -17,8 +16,7 @@ const App = () => {
 
         {/* Сетка карточек */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {/* 2. Используем правильную переменную MENU_ITEMS */}
-          {MENU_ITEMS.map((item) => (
+          {menuData.map((item) => (
             <div 
               key={item.id} 
               className="flex flex-col bg-neutral-900 rounded-2xl overflow-hidden shadow-xl border border-neutral-800 transition-transform hover:-translate-y-1 duration-300"
@@ -26,14 +24,13 @@ const App = () => {
               {/* Фотография */}
               <div className="h-56 w-full bg-neutral-800 relative">
                 <img 
-                  // 3. Исправили item.image на item.imageUrl
-                  src={item.imageUrl} 
+                  src={item.image} 
                   alt={item.name} 
                   className="w-full h-full object-cover"
                   loading="lazy"
                   onError={(e) => {
-                    // Используем currentTarget для совместимости с TypeScript
-                    e.currentTarget.src = "https://via.placeholder.com/400x300/333333/ffffff?text=KAIF+Lounge";
+                    // Заглушка, если картинка не загрузится или имя файла не совпадает
+                    e.target.src = "https://via.placeholder.com/400x300/333333/ffffff?text=KAIF+Lounge";
                   }}
                 />
                 <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-neutral-300 uppercase tracking-wider">
